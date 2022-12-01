@@ -14,9 +14,9 @@ public class Main
         float heightB = calculateTriangleHeight(sideA, sideB, sideC, sideB);
         float heightC = calculateTriangleHeight(sideA, sideB, sideC, sideC);
 
-        printHeightOfTriangle("A", heightA);
-        printHeightOfTriangle("B", heightB);
-        printHeightOfTriangle("C", heightC);
+        printTriangleHeight("A", heightA);
+        printTriangleHeight("B", heightB);
+        printTriangleHeight("C", heightC);
 
     }
 
@@ -39,7 +39,7 @@ public class Main
         return 2 * (float) Math.sqrt(semiperimeter * (semiperimeter - sideA) * (semiperimeter - sideB) * (semiperimeter - sideC)) / calculatedHeightSide;
     }
 
-    private static void printHeightOfTriangle(String sideName, float sideHeight)
+    private static void printTriangleHeight(String sideName, float sideHeight)
     {
         System.out.printf("Высота стороны %s = %.2f\n", sideName, sideHeight);
     }
