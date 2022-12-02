@@ -36,7 +36,7 @@ public class Main
     {
         float semiperimeter = (sideA + sideB + sideC) / 2;
 
-        return 2 * (float) Math.sqrt(semiperimeter * (semiperimeter - sideA) * (semiperimeter - sideB) * (semiperimeter - sideC)) / calculatedHeightSide;
+        return 2 / calculatedHeightSide * (float) Math.sqrt(semiperimeter * (semiperimeter - sideA) * (semiperimeter - sideB) * (semiperimeter - sideC));
     }
 
     private static void printTriangleHeight(String sideName, float sideHeight)
